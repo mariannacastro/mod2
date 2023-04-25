@@ -1,0 +1,281 @@
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #ac29b8;
+    --bs-btn-hover-border-color: #e4eaee;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+body {
+    background-image: linear-gradient(90deg, #020024 0%, #700979 35%, #00d4ff 100%);
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+.mensaje {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-top: 2.7em;
+}
+
+.mensaje img {
+    width: 75px;
+    height: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.mensaje img:hover {
+    transform: scale(1.2);
+}
+
+.contenido-mensaje {
+    flex-grow: 1;
+}
+
+.contenido-mensaje h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contenido-mensaje p {
+    font-size: 16px;
+    background-color: #4b6668;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.fecha {
+    font-size: 14px;
+    color: #888;
+}
+
+
+/* mensaje dos  */
+
+.mensaje2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+    /* Nueva propiedad */
+    margin-left: 20px;
+}
+
+.mensaje2 img {
+    width: 500px;
+    height: 70px;
+    margin-right: 30px;
+    /* aumenta y queda mas espacio lado derecho */
+    /* aumenta y queda más espacio lado izquierdo del mensaje */
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+.mensaje2 img:hover {
+    transform: scale(1.2);
+}
+
+.contenido-mensaje-two {
+    flex-grow: 1;
+    color: #107737;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.contenido-mensaje-two h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.contenido-mensaje-two p {
+    margin: 5px 0;
+    font-size: 16px;
+    background-color: aquamarine;
+    padding: 1em;
+}
+
+.fecha2 {
+    font-size: 14px;
+    color: #107737;
+    display: flex;
+    justify-content: flex-end;
+    border: #5a23c8;
+}
+
+.contenido-mensaje-l p {
+    background-color: #888;
+}
+
+
+/* mensajes lado izquierdo 
+patricia torres, a la izquierda
+*/
+
+.mensaje-left {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mensaje-left img {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.mensaje-left img:hover {
+    transform: scale(1.2);
+}
+
+.contenido-mensaje-left {
+    flex-grow: 1;
+}
+
+.contenido-mensaje-left h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contenido-mensaje-left p {
+    margin: 5px;
+    font-size: 16px;
+    background-color: #79deeb;
+    padding: 1em;
+}
+
+.fecha-left {
+    font-size: 14px;
+    color: #888;
+}
+
+
+/* 
+
+para clase Pepito
+*/
+
+.mensaje-left-pepito {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(52, 206, 38);
+}
+
+.mensaje-left-pepito:hover {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.mensaje-left-pepito:active {
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+}
+
+.mensaje-left-pepito img {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.mensaje-left-pepito img:hover {
+    transform: scale(1.2);
+}
+
+.contenido-mensaje-left-pepito {
+    flex-grow: 1;
+}
+
+.contenido-mensaje-left-pepito h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contenido-mensaje-left-pepito p {
+    font-size: 16px;
+    background-color: #da9de2;
+    padding: 1em;
+    border: #107737;
+    border-radius: 2em;
+}
+
+.fecha-left-pepito {
+    font-size: 14px;
+    color: #888;
+}
+
+.mensaje-left-pepito {
+    font-weight: normal;
+    color: black;
+}
+
+#escribir {
+    flex-grow: 1;
+    padding: 1em;
+    margin-left: 30px;
+}
+
+#btn-buscar {
+    background-color: #ac29b8;
+    color: #e4eaee;
+}
+
+#btn-buscar:hover {
+    transform: scale(1.12);
+    background-color: #5a23c8;
+}
+
+#btn-buscar:active {
+    transform: scale(1.0);
+    background-color: #946be6;
+}
+
+#formescribir {
+    margin-left: 30px;
+}
