@@ -309,6 +309,7 @@ para clase Pepito
 #btn-buscar {
     background-color: #ac29b8;
     color: #e4eaee;
+    /* margin-left: 20px; */
 }
 
 #btn-buscar:hover {
@@ -333,4 +334,13 @@ para clase Pepito
 #imgicono:hover {
     transform: scale(1.2);
     filter: brightness(120%);
+}
+
+.inputdocument {
+    margin-left: 2rem;
+}
+
+.file {
+    background-color: #ac29b8;
+    color: #e4eaee;
 }
