@@ -69,6 +69,7 @@ body {
     margin-right: 30px;
     border-radius: 50%;
     float: left;
+    transition: transform 0.25s ease-in-out;
 }
 
 .mensaje img:hover {
@@ -132,6 +133,7 @@ body {
     /* aumenta y queda más espacio lado izquierdo del mensaje */
     margin-left: 30px;
     border-radius: 50%;
+    transition: transform 0.25s ease-in-out;
 }
 
 .mensaje2 img:hover {
@@ -199,6 +201,7 @@ patricia torres, a la izquierda
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 50%;
+    transition: transform 0.25s ease-in-out;
 }
 
 .mensaje-left img:hover {
@@ -263,6 +266,7 @@ para clase Pepito
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 50%;
+    transition: transform 0.25s ease-in-out;
 }
 
 .mensaje-left-pepito img:hover {
