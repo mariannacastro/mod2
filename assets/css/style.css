@@ -37,6 +37,18 @@
     --bs-btn-active-border-color: #5a23c8;
 }
 
+
+/*  datos sobre colores
+--bs-bg-opacity: 0.5; queda estético
+--bs-bg-opacity: 1; se ve blanco
+--bs-bg-opacity: si no aparece se ve el degradé del fondo
+*/
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 0.5;
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity))!important;
+}
+
 body {
     background-image: linear-gradient(90deg, #020024 0%, #700979 35%, #00d4ff 100%);
     /* font-family: 'Nunito', sans-serif; */
@@ -56,10 +68,18 @@ body {
     margin-left: 30px;
     margin-right: 30px;
     border-radius: 50%;
+    float: left;
 }
 
 .mensaje img:hover {
     transform: scale(1.2);
+    filter: brightness(115%);
+}
+
+.mensaje::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .contenido-mensaje {
@@ -73,21 +93,27 @@ body {
 }
 
 .contenido-mensaje p {
+    /*mensaje der patricia*/
     font-size: 16px;
-    background-color: #4b6668;
+    /* background-color: #4b6668; */
+    background-color: #363f6e;
     padding: 1em;
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
+    border-radius: 0.5em;
+    height: auto;
+    width: auto;
+    color: #bde2e9;
 }
 
 .fecha {
     font-size: 14px;
-    color: #888;
+    color: rgb(0, 0, 0);
 }
 
 
-/* mensaje dos  */
+/* mensaje dos TÚ */
 
 .mensaje2 {
     display: flex;
@@ -99,7 +125,7 @@ body {
 }
 
 .mensaje2 img {
-    width: 500px;
+    width: auto;
     height: 70px;
     margin-right: 30px;
     /* aumenta y queda mas espacio lado derecho */
@@ -110,14 +136,16 @@ body {
 
 .mensaje2 img:hover {
     transform: scale(1.2);
+    filter: brightness(120%);
 }
 
 .contenido-mensaje-two {
     flex-grow: 1;
-    color: #107737;
+    color: #000000;
     padding: 30px;
     border-radius: 10px;
-    position: relative;
+    line-height: 1.5;
+    border-radius: 0.5em;
 }
 
 .contenido-mensaje-two h3 {
@@ -127,24 +155,32 @@ body {
     text-align: right;
 }
 
+
+/* aquamariune antes, cambio de color mensaje TÚ*/
+
 .contenido-mensaje-two p {
     margin: 5px 0;
     font-size: 16px;
-    background-color: aquamarine;
+    background-color: #9c6baf;
     padding: 1em;
+    line-height: 1.5;
+    border-radius: 0.5em;
+    color: #bde2e9;
 }
 
 .fecha2 {
     font-size: 14px;
-    color: #107737;
+    color: #000000;
     display: flex;
     justify-content: flex-end;
     border: #5a23c8;
 }
 
-.contenido-mensaje-l p {
-    background-color: #888;
-}
+
+/* .contenido-mensaje-l p {
+    background-color: #a51e1e;
+    border-radius: 0.5em;
+} */
 
 
 /* mensajes lado izquierdo 
@@ -167,10 +203,12 @@ patricia torres, a la izquierda
 
 .mensaje-left img:hover {
     transform: scale(1.2);
+    filter: brightness(120%);
 }
 
 .contenido-mensaje-left {
-    flex-grow: 1;
+    display: flex-end;
+    flex-grow: 0.7;
 }
 
 .contenido-mensaje-left h3 {
@@ -182,13 +220,17 @@ patricia torres, a la izquierda
 .contenido-mensaje-left p {
     margin: 5px;
     font-size: 16px;
-    background-color: #79deeb;
+    /* AZUL LADO IZQUIERDO*/
+    background-color: #363f6e;
     padding: 1em;
+    border-radius: 0.5em;
+    color: #bde2e9;
 }
 
 .fecha-left {
     font-size: 14px;
-    color: #888;
+    color: #000000;
+    /* ac29b8   */
 }
 
 
@@ -225,10 +267,12 @@ para clase Pepito
 
 .mensaje-left-pepito img:hover {
     transform: scale(1.2);
+    filter: brightness(130%);
 }
 
 .contenido-mensaje-left-pepito {
-    flex-grow: 1;
+    display: flex-end;
+    flex-grow: 0.7;
 }
 
 .contenido-mensaje-left-pepito h3 {
@@ -239,26 +283,27 @@ para clase Pepito
 
 .contenido-mensaje-left-pepito p {
     font-size: 16px;
-    background-color: #da9de2;
+    background-color: #98679c;
     padding: 1em;
     border: #107737;
-    border-radius: 2em;
+    border-radius: 0.5em;
 }
 
 .fecha-left-pepito {
     font-size: 14px;
-    color: #888;
+    color: rgb(0, 0, 0);
 }
 
 .mensaje-left-pepito {
     font-weight: normal;
-    color: black;
+    color: rgb(15, 14, 14);
 }
 
 #escribir {
     flex-grow: 1;
     padding: 1em;
     margin-left: 30px;
+    border-radius: 0.5em;
 }
 
 #btn-buscar {
@@ -278,4 +323,14 @@ para clase Pepito
 
 #formescribir {
     margin-left: 30px;
+}
+
+.li-img:hover {
+    transform: scale(1.2);
+    filter: brightness(120%);
+}
+
+#imgicono:hover {
+    transform: scale(1.2);
+    filter: brightness(120%);
 }

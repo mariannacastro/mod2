@@ -146,10 +146,10 @@
                 <div class="dropdown">
                     <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
 
-                        <img src="assets/img/icono.png" alt="icono" width="40" height="40">
+                        <img src="assets/img/icono.png" id="imgicono" alt="icono" width="40" height="40">
                     </a>
                     <ul class="dropdown-menu text-small shadow">
-                        <img src="assets/img/kiwi-bird-bluegradient.png" alt="icono" width="100" height="100">
+                        <img src="assets/img/kiwi-bird-bluegradient.png" alt="icono" width="100" height="100" class="li-img">
                         <li><a class="dropdown-item active" href="#" aria-current="page">Información general</a></li>
                         <li><a class="dropdown-item" href="#">Inventario</a></li>
                         <li><a class="dropdown-item" href="#">Agenda</a></li>
@@ -176,7 +176,7 @@
 
                     <div class="flex-shrink-0 dropdown">
                         <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/img/persona1.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+                            <img src="assets/img/persona1.jpg" alt="mdo" width="32" height="32" class="rounded-circle li-img">
                         </a>
                         <ul class="dropdown-menu text-small shadow">
                             <li><a class="dropdown-item" href="#">Nuevo proyecto...</a></li>
@@ -205,7 +205,7 @@
                         <img src="assets/img/persona1.avif" alt="Imagen de usuario1">
                         <div class="contenido-mensaje-left">
                             <h3>Patricia Torres</h3>
-                            <p>Quam, vero. Ipsum dicta modi sed tenetur, nulla quos perspiciatis possimus...
+                            <p>Quam, vero. Ipsum dicta modi sed tenetur, nulla quos...
                             </p>
                             <span class="fecha-left">9:52</span>
                         </div>
@@ -215,9 +215,9 @@
                         <img src="assets/img/Pepito.jpg" alt="Imagen de usuario1">
                         <div class="contenido-mensaje-left-pepito">
                             <h3>Pepito</h3>
-                            <p> <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit...</strong>
+                            <p> <em><strong>Lorem ipsum dolor sit amet consectetur...</strong> (no leído)</em>
                             </p>
-                            <span class="fecha-left-pepito">9:52</span>
+                            <span class="fecha-left-pepito">6:35</span>
                         </div>
                     </div>
                     <hr>
@@ -225,9 +225,9 @@
                         <img src="assets/img/persona9b.jpg" alt="Imagen de usuario3">
                         <div class="contenido-mensaje-left">
                             <h3>Laura Flores</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla...
+                            <p>Lorem ipsum dolor sit amet consectet, adipisicing elit...
                             </p>
-                            <span class="fecha-left">9:52</span>
+                            <span class="fecha-left">0:07</span>
                         </div>
                     </div>
                     <hr>
@@ -235,9 +235,9 @@
                         <img src="assets/img/persona4b.jpg" alt="Imagen de usuario4">
                         <div class="contenido-mensaje-left">
                             <h3>Jimena Gonzalez</h3>
-                            <p>Consequuntur itaque dicta recusandae a libero debitis temporibus fugiat labore maiores!...
+                            <p>Consequuntur itaque dicta recusandae a libero debiti...
                             </p>
-                            <span class="fecha-left">9:52</span>
+                            <span class="fecha-left">23 de abril - 13:00</span>
                         </div>
                     </div>
                     <hr>
@@ -245,9 +245,9 @@
                         <img src="assets/img/persona5.jpg" alt="Imagen de usuario5">
                         <div class="contenido-mensaje-left">
                             <h3>Esteban Castillo</h3>
-                            <p>Voluptate, sint recusandae maxime excepturi soluta officiis unde iste voluptatibus quae accusantium...
+                            <p>Voluptate, sint recusan maxime excepturi soluta qui...
                             </p>
-                            <span class="fecha-left">9:52</span>
+                            <span class="fecha-left">22 de abril - 19:02</span>
                         </div>
                     </div>
                     <hr>
@@ -255,9 +255,9 @@
                         <img src="assets/img/persona6.jpg" alt="Imagen de usuario6">
                         <div class="contenido-mensaje-left">
                             <h3>Emilio Smith</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit....
+                            <p>Lorem ipsum dolor, amet consectetur ipsum elit sit....
                             </p>
-                            <span class="fecha-left">9:52</span>
+                            <span class="fecha-left">15 de abril - 14:36</span>
                         </div>
                     </div>
                     <hr>
@@ -265,9 +265,9 @@
                         <img src="assets/img/persona7.jpg" alt="Imagen de usuario7">
                         <div class="contenido-mensaje-left">
                             <h3>Lorena Diaz</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio impedit ipsa...
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing...
                             </p>
-                            <span class="fecha-left">9:52</span>
+                            <span class="fecha-left">10 de enero - 9:05</span>
                         </div>
                     </div>
                     <hr>
@@ -275,9 +275,20 @@
                         <img src="assets/img/persona8.jpg" alt="Imagen de usuario8">
                         <div class="contenido-mensaje-left">
                             <h3>Damian Mitchell</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing...
                             </p>
-                            <span class="fecha-left">9:52</span>
+                            <span class="fecha-left">23/12/2022 - 8:00</span>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="mensaje-left">
+                        <img src="assets/img/persona10.jpg" alt="Imagen de usuario8">
+                        <div class="contenido-mensaje-left">
+                            <h3>Agatha Nisi</h3>
+                            <p>Magni totam, iure, laudantium laborum elit id odit...
+                            </p>
+                            <span class="fecha-left">04/11/2022 - 17:00</span>
                         </div>
                     </div>
                     <hr>
